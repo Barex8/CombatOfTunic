@@ -6,6 +6,7 @@ public class DamageDealer : MonoBehaviour
 {
     public int damage;
     public bool doDamage;
+    [SerializeField]private bool destroyWhenHit = false;
 
     private void OnTriggerStay(Collider collider)
         {
@@ -18,7 +19,12 @@ public class DamageDealer : MonoBehaviour
                 print("Dañando: " + collider.name);
                 collider.transform.GetComponent<Damageable>().GetDamage(damage);
                 damageable.GetHit(transform.position);
+                if (destroyWhenHit)
+                    {
+                    Destroy(gameObject);
+                    }
                 }
+            
             }
         }
     }

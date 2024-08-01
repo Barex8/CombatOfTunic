@@ -53,10 +53,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLenghtToMove: 10
-  boxCheckGroundSize: {x: 1, y: 0.1, z: 1}
-  groundLayerMask:
-    serializedVersion: 2
-    m_Bits: 55
   velocity: 3.5
   moveForward: 5
   maxTimeToTarget: 2
@@ -89,10 +85,11 @@ MonoBehaviour:
   WaitToDeath: 0.5
   invincibilityWhenHit: 1
   invincibleTime: 0.5
+  hitRecived: 0
   pushBack: 1
   pushBackTime: 0.6
-  pushBackForce: 6
-  heightRayCheckGroundForward: 0
+  pushBackForce: 2
+  heightRayCheckGroundForward: 0.5
   rb: {fileID: 0}
   colorHit: {r: 1, g: 1, b: 1, a: 0}
   normalColor: {r: 0, g: 0, b: 0, a: 0}

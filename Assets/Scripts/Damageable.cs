@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -57,13 +58,9 @@ public class Damageable : MonoBehaviour
             hitable = false;
             float elipsedTime = 0;
             float lastPeriod = 0;
-            
-            try
-                {
-                transform.GetChild(0).GetComponent<Animator>().SetTrigger("GetHit");
-                }
-            catch{}
 
+            transform.GetChild(0).GetComponent<Animator>().SetTrigger("GetHit");
+                
             while (elipsedTime < invincibleTime)
                 {
                 elipsedTime += Time.deltaTime;
