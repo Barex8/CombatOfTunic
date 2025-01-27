@@ -88,7 +88,7 @@ MonoBehaviour:
   hitRecived: 0
   pushBack: 1
   pushBackTime: 0.6
-  pushBackForce: 2
+  pushBackForce: 3
   heightRayCheckGroundForward: 0.5
   rb: {fileID: 0}
   colorHit: {r: 1, g: 1, b: 1, a: 0}
@@ -109,6 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 2
   doDamage: 1
+  destroyWhenHit: 0
 --- !u!54 &4993941704797647863
 Rigidbody:
   m_ObjectHideFlags: 0
